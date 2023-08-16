@@ -1,5 +1,7 @@
 package com.practice.weblogin.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -29,6 +31,32 @@ public class MemberController {
 		
 		memberService.save( memberDTO );
 		
-		return "index";
+		return "/member/login";
 	}
+	
+	@GetMapping("/login")
+	public String memberloginForm() {
+		
+		return "/member/login";
+	}
+	
+	
+	
+	@PostMapping("/login")
+	public String memberLogin( @ModelAttribute MemberDTO memberDTO , HttpSession session) {
+		
+		MemberDTO loginResult = memberService.login( memberDTO );
+		if( loginResult != null ) {
+			//login 성공
+			session.setAttribute("loginEmail", loginResult.getMemberEmail());
+			System.out.println("login 성공");
+			return "main";
+		}else {
+			//login 실패
+			System.out.println("login 실패");
+			return "index";
+		}
+	}
+	
+	
 }

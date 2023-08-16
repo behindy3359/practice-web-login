@@ -7,16 +7,22 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.practice.weblogin.dto.MemberDTO;
+
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Data
+@Getter
+@Setter
 @Table( name="member_table" )
 public class MemberEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private int id;
 	
 	@Column(unique = true)
 	private String memberEmail;
@@ -26,5 +32,15 @@ public class MemberEntity {
 	
 	@Column
 	private String memberName;
+	
+	public static MemberEntity toMemberEntity( MemberDTO memberDTO ) {
+		
+		MemberEntity memberEntity = new MemberEntity();
+		memberEntity.setMemberEmail(memberDTO.getMemberEmail());
+		memberEntity.setMemberPassword(memberDTO.getMemberPassword());
+		memberEntity.setMemberName(memberDTO.getMemberName());
+		
+		return memberEntity;
+	}
 	
 }
