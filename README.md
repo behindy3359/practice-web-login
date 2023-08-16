@@ -4,7 +4,7 @@
 ****
 ### Object
 
-login function on the web.
+practice for member-information-management-function on the web.
 
 ****
 ### Environment
