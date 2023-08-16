@@ -22,7 +22,7 @@ login function on the web.
 - gradle - build and library management
 
 
-- MySQL 8.0.30 - database integration
+- MySQL 8.0 - database integration
 
 
 - Spring Data JPA - database operations
