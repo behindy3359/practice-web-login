@@ -39,3 +39,6 @@ login function on the web.
 #### 0.0.1
 
 start from here
+#### 0.0.2
+
+Test for connecting with MySQL DB
