@@ -28,7 +28,7 @@ practice for member-information-management-function on the web.
 - Spring Data JPA - database operations
 
   
-- Thymeleaf - screen composition
+- Thymeleaf
 
 
 - lombok
