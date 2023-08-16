@@ -37,6 +37,11 @@ login function on the web.
 
 ****
 
+#### 0.0.3
+
+Test for Sign in, Sign up
+
+
 #### 0.0.2
 
 Test for connecting with MySQL DB
