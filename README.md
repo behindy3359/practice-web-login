@@ -37,9 +37,14 @@ practice for member-information-management-function on the web.
 
 ****
 
+#### 0.0.4
+
+practice for read, update, delete, logout
+
+
 #### 0.0.3
 
-Test for Sign in, Sign up
+practice for Sign in, Sign up
 
 
 #### 0.0.2
