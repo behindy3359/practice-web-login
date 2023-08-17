@@ -42,5 +42,20 @@ public class MemberEntity {
 		
 		return memberEntity;
 	}
-	
+	public static MemberEntity toUpdateMemberEntity( MemberDTO memberDTO ) {
+		
+		MemberEntity memberEntity = new MemberEntity();
+		
+		memberEntity.setId(memberDTO.getId());
+		memberEntity.setMemberEmail(memberDTO.getMemberEmail());
+		memberEntity.setMemberPassword(memberDTO.getMemberPassword());
+		memberEntity.setMemberName(memberDTO.getMemberName());
+
+		System.out.println(memberDTO.getId());
+		System.out.println(memberDTO.getMemberEmail());
+		System.out.println(memberDTO.getMemberPassword());
+		System.out.println(memberDTO.getMemberName());
+		
+		return memberEntity;
+	}
 }

@@ -6,6 +6,9 @@
 
 </head>
 	<body>
-		session 값 확인 : <p th:text="${session.loginEmail}"></p>
+		main page- 로그인 성공시 도달하게되는 페이지<hr>
+		session 값 확인 : <p th:text="${session.loginEmail}"></p><br>
+		<a href="/member/update"> 내 정보 수정하기</a><br>
+		<a href="/member/logout"> 로그아웃</a>
 	</body>
 </html>
