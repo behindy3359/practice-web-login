@@ -4,7 +4,7 @@
 ****
 ### Object
 
-login function on the web.
+practice for member-information-management-function on the web.
 
 ****
 ### Environment
@@ -22,13 +22,13 @@ login function on the web.
 - gradle - build and library management
 
 
-- MySQL 8.0.30 - database integration
+- MySQL 8.0 - database integration
 
 
 - Spring Data JPA - database operations
 
   
-- Thymeleaf - screen composition
+- Thymeleaf
 
 
 - lombok
@@ -37,9 +37,14 @@ login function on the web.
 
 ****
 
+#### 0.0.4
+
+practice for read, update, delete, logout
+
+
 #### 0.0.3
 
-Test for Sign in, Sign up
+practice for Sign in, Sign up
 
 
 #### 0.0.2
