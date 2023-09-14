@@ -41,6 +41,13 @@ This project doesn't include design.
 
 #### 0.0.4
 
+
+Email duplication check and registration using AJAX
+
+
+#### 0.0.4
+
+
 practice for read, update, delete, logout
 
 
