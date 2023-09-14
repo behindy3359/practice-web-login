@@ -6,6 +6,8 @@
 
 practice for member-information-management-function on the web.
 
+This project doesn't include design.
+
 ****
 ### Environment
   In Eclipse eclipse 2023-03
