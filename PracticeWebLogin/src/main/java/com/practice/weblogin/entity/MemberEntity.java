@@ -17,35 +17,36 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-@Table( name="member_table" )
+@Table(name = "member_table")
 public class MemberEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
+
 	@Column(unique = true)
 	private String memberEmail;
-	
+
 	@Column
 	private String memberPassword;
-	
+
 	@Column
 	private String memberName;
-	
-	public static MemberEntity toMemberEntity( MemberDTO memberDTO ) {
-		
+
+	public static MemberEntity toMemberEntity(MemberDTO memberDTO) {
+
 		MemberEntity memberEntity = new MemberEntity();
 		memberEntity.setMemberEmail(memberDTO.getMemberEmail());
 		memberEntity.setMemberPassword(memberDTO.getMemberPassword());
 		memberEntity.setMemberName(memberDTO.getMemberName());
-		
+
 		return memberEntity;
 	}
-	public static MemberEntity toUpdateMemberEntity( MemberDTO memberDTO ) {
-		
+
+	public static MemberEntity toUpdateMemberEntity(MemberDTO memberDTO) {
+
 		MemberEntity memberEntity = new MemberEntity();
-		
+
 		memberEntity.setId(memberDTO.getId());
 		memberEntity.setMemberEmail(memberDTO.getMemberEmail());
 		memberEntity.setMemberPassword(memberDTO.getMemberPassword());
@@ -55,7 +56,7 @@ public class MemberEntity {
 		System.out.println(memberDTO.getMemberEmail());
 		System.out.println(memberDTO.getMemberPassword());
 		System.out.println(memberDTO.getMemberName());
-		
+
 		return memberEntity;
 	}
 }

@@ -4,21 +4,23 @@
 <meta charset="UTF-8">
 <title>detail</title>
 </head>
-	<body>
-		<h2>detail.html</h2><hr><br>
-		<table>
-			<tr>
-				<th>id</th>
-				<th>memberEmail</th>
-				<th>memberPassword</th>
-				<th>memberName</th>
-			</tr>
-			<tr>
-				<td th:text="${member.id}"></td>
-				<td th:text="${member.memberEmail}"></td>
-				<td th:text="${member.memberPassword}"></td>
-				<td th:text="${member.memberName}"></td>
-			</tr>
-		</table>
-	</body>
+<body>
+	<h2>detail.html</h2>
+	<hr>
+	<br>
+	<table>
+		<tr>
+			<th>id</th>
+			<th>memberEmail</th>
+			<th>memberPassword</th>
+			<th>memberName</th>
+		</tr>
+		<tr>
+			<td th:text="${member.id}"></td>
+			<td th:text="${member.memberEmail}"></td>
+			<td th:text="${member.memberPassword}"></td>
+			<td th:text="${member.memberName}"></td>
+		</tr>
+	</table>
+</body>
 </html>
