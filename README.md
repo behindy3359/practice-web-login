@@ -39,7 +39,7 @@ This project doesn't include design.
 
 ****
 
-#### 0.0.4
+#### 0.0.5
 
 
 Email duplication check and registration using AJAX
